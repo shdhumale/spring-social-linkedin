@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>Hello Linkedin</title>
+	</head>
+	<body>
+		<h3>Connect to Linkedin</h3>
+		<span th:if="${social_provider_error}">Provider error (maybe you need to configure the app id and secret?)</span>
+		<form action="/connect/linkedin" method="POST">
+		<!--  <input type="hidden" name="scope" value="read_stream" /> -->
+			<div class="formInfo">
+				<p>You aren't connected to Linkedin yet. Click the button to connect this application with your Linkedin account.</p>
+			</div>
+			<p><button type="submit">Connect to Linkedin</button></p>
+		</form>
+	</body>
+</html>
